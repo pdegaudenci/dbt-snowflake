@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: stellantis_demo        # <- tu base de datos en Snowflake
+    schema: raw                      # <- tu esquema donde subiste los CSV
+    tables:
+      - name: sales_data
+      - name: clients_data
+      - name: fleet_data
