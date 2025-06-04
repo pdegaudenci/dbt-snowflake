@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_sales
+    columns:
+      - name: sale_id
+        tests:
+          - unique
+          - not_null
+      - name: dealer_id
+        tests:
+          - not_null
